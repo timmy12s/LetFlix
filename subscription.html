@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Subscription</title>
+    <link rel="stylesheet" href="./css/subscription.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+
+    <script src="../js/subscription.js"></script>
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo">
+        <img src="./assets/LOGO.png" alt="" />
+      </div>
+      <div class="nav-bar">
+        <div class="nav-content"><a href="homepage.html">Home</a></div>
+        <div class="nav-content">
+          <a href="dramas.html">Dramas</a>
+          <div class="dropdown-content">
+            <a href="dramas.html#wes"><p>Western Movies</p></a>
+            <a href="dramas.html#chi"><p>Chinese Movies</p></a>
+            <a href="dramas.html#jap"><p>Japanese Movies</p></a>
+            <a href="dramas.html#kor"><p>Korean Movies</p></a>
+            <a href="dramas.html#ind"><p>Indonesian Movies</p></a>
+          </div>
+        </div>
+        <div class="nav-content"><a href="plans.html">Plans</a></div>
+        <div class="nav-content"><a href="about.html">About Us</a></div>
+        <div class="nav-content">
+          <a href="subscription.html">Subscription</a>
+        </div>
+      </div>
+      <div class="menu-bar" onclick="myFunction()">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+      <div class="user-logo"></div>
+    </div>
+
+    <div class="content-wrapper">
+      <div class="logo">
+        <img src="./assets/LOGO.png" alt="" />
+        <p>Unlimited movies TV shows and more</p>
+      </div>
+      <div class="container">
+        <h1>Subscription</h1>
+        <h3>Subscribe now to get all the benefits</h3>
+
+        <form
+          name="inputForm"
+          action="./homepage.html"
+          method="GET"
+          onsubmit="return validateForm()"
+        >
+          <div class="email row">
+            <div class="col-25">
+              <label for="email">Email</label>
+            </div>
+            <div class="col-75">
+              <input
+                type="email"
+                class="no-outline"
+                id="email"
+                name="email"
+                placeholder="Your email.."
+              />
+            </div>
+          </div>
+          <div class="password row">
+            <div class="col-25">
+              <label for="password">Password</label>
+            </div>
+            <div class="col-75">
+              <input
+                type="password"
+                class="no-outline"
+                id="password"
+                name="password"
+                placeholder="Your password.."
+              />
+            </div>
+          </div>
+          <div class="gender row">
+            <div class="col-25">
+              <label for="gender">Gender</label>
+            </div>
+            <div class="col-75">
+              <input type="radio" id="g1" name="gender" value="female" />
+              <label for="female">Female</label>
+              <input type="radio" id="g2" name="gender" value="male" />
+              <label for="male">Male</label>
+              <input type="radio" id="g3" name="gender" value="notSay" />
+              <label for="notSay">Not Say</label>
+              <div id="gender-err" class="error"></div>
+            </div>
+          </div>
+          <div class="plan row">
+            <div class="col-25">
+              <label for="plan">Chosen Plan</label>
+            </div>
+            <div class="col-75">
+              <select id="plan" name="plan">
+                <option value="" disabled selected>Choose your plan</option>
+                <option value="silver">Silver</option>
+                <option value="gold">Gold</option>
+                <option value="diamond">Diamond</option>
+              </select>
+            </div>
+          </div>
+          <div class="terms row">
+            <div class="col-25"></div>
+            <div class="col-75">
+              <input type="checkbox" id="terms" />
+              I've read and accept the <span>terms & conditions</span>
+              <div id="terms-err" class="error"></div>
+            </div>
+          </div>
+          <div class="row">
+            <input type="submit" value="Register" />
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <footer>
+      <div class="kiri">
+        <div class="logo-detail">
+          <img id="maps" src="./assets/maps-and-flags-white.png" alt="" />
+          <div>
+            <h3>LeTflix Corporate Winchester Circle Los Gatos, CA</h3>
+          </div>
+        </div>
+        <div class="logo-detail">
+          <img id="phone" src="./assets/phone-call-white.png" alt="" />
+          <div>
+            <h3>+62 8553707792</h3>
+          </div>
+        </div>
+        <div class="logo-detail">
+          <img id="mail" src="./assets/mail-white.png" alt="" />
+          <div>
+            <h3>support@letflix.com</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="aboutcompany">
+        <h3>About the company</h3>
+        <p>
+          LeTflix. Inc. is an American content platform production company
+          headquartered in Los Gatos, California. LeTflix was founded in 2021 by
+          Stefanus Hermawan and his friends in Los Gatos, California. The
+          company’s primary business is a subscription based streaming service
+          offering online streaming from a library of films and television
+          series, including those produced in house.
+        </p>
+        <div class="gambarsosmed">
+          <a href="https://facebook.com" target="blank"
+            ><img class="sosmed" src="./assets/facebook-white.png" alt=""
+          /></a>
+          <a href="https://instagram.com" target="blank"
+            ><img class="sosmed" src="./assets/instagram-white.png" alt=""
+          /></a>
+          <a href="https://twitter.com" target="blank"
+            ><img class="sosmed" src="./assets/twitter-white.png" alt=""
+          /></a>
+          <a href="https://linkedin.com" target="blank"
+            ><img class="sosmed" src="./assets/linkedin-white.png" alt=""
+          /></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
