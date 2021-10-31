@@ -1,0 +1,50 @@
+body,
+header,
+footer {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #141414;
+}
+
+.slider {
+  width: 1400px;
+  height: 800px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.slides {
+  display: block;
+  width: 8400px;
+  height: 800px;
+  margin-left: 0;
+  padding: 0;
+}
+
+.slide {
+  float: left;
+  list-style-type: none;
+  width: 1400px;
+  height: 800px;
+}
+
+.slide img {
+  width: 1400px;
+  height: 800px;
+}
+
+.poster {
+  width: 250px;
+  height: 400px;
+  margin: 10px;
+}
+
+.poster-row {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  position: relative;
+}

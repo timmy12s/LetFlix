@@ -1,0 +1,182 @@
+html,
+body,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+div {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", "Sans Serif";
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+
+/* Header */
+.header {
+  background-color: #453f3f;
+  padding: 10px 50px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 180px;
+  height: 50px;
+}
+
+.search-bar {
+  height: 70px;
+  border-radius: 35px;
+  position: relative;
+}
+
+.search-bar input {
+  width: 300px;
+  border: 0;
+  border-radius: 35px;
+  padding: 10px;
+  opacity: 0.5;
+  position: absolute;
+}
+
+.search-icon {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 280px;
+  top: 8px;
+}
+
+.content-wrapper {
+  padding-top: 100px;
+  /* padding-left: 50px; */
+  /* padding-right: 50px; */
+}
+
+.heading {
+  width: 60%;
+  margin-bottom: 50px;
+}
+
+.heading h1 {
+  font-size: 36px;
+  font-weight: 500;
+}
+
+.heading h2 {
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.content-wrapper .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.tier {
+  color: black;
+}
+
+.contents {
+  display: flex;
+  flex-direction: column;
+  width: 1000px;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #c4c4c4;
+  color: #4e4e4e;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.col-75 {
+  float: left;
+  width: 75%;
+}
+
+.content h1 {
+  font-size: 28px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+table {
+  width: 100%;
+  table-layout: fixed;
+}
+
+td {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.desc {
+  font-size: 18px;
+  /* padding-top: 15px; */
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+}
+
+.notes {
+  padding: 20px 50px;
+  width: 60%;
+}
+
+.notes p {
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+@media (max-width: 900px) {
+  .content {
+    flex-direction: column;
+  }
+
+  .desc {
+    margin-bottom: 15px;
+  }
+}
